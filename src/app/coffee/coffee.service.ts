@@ -15,7 +15,6 @@ export class CoffeeService {
   constructor(private http: HttpClient) { }
 
   getAllCoffees(): Observable<Coffee[]> {
-    console.log(this.apiUrl)
     return this.http.get<Coffee[]>(this.apiUrl);
   }
 
