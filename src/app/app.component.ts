@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  imgSrc = "assets/images/coffee_beans.png"
   title = 'MISW4104_202412_EX1';
 }

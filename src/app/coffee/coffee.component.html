@@ -1,3 +1,35 @@
-<p>
-  coffee works!
-</p>
+<div class="container-fluid">
+  <hr/>
+  <img title="coffee beans" src="../../assets/images/coffee_beans.png">
+  <hr/>
+  <div class="col-6">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th class="h4">#</th>
+          <th class="h4">Nombre</th>
+          <th class="h4">Tipo</th>
+          <th class="h4">Region</th>
+          <!--<th class="h4">Sabor</th>
+          <th class="h4">Altura</th>-->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let iterCoffee of coffees">
+          <td>
+            <dd>{{iterCoffee.id}}</dd>
+          </td>
+          <td>
+            <dd>{{iterCoffee.nombre}}</dd>
+          </td>
+          <td>
+            <dd>{{iterCoffee.tipo}}</dd>
+          </td>
+          <td>
+            <dd>{{iterCoffee.region}}</dd>
+          </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
